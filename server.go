@@ -29,8 +29,8 @@ func main() {
 	})
 
 	app.Get("/todo", getTodo)
-	app.Post("/todo", postTodo)
 	app.Get("/todo/:id", getSingleTodo)
+	app.Post("/todo", postTodo)
 	app.Delete("/todo/:id", deleteTodo)
 	app.Patch("/todo/:id", patchTodo)
 
